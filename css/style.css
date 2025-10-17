@@ -445,7 +445,7 @@ textarea {
 @media only screen and (max-width: 56.25em) {
   .home-hero__cta {
     padding-top: 7rem;
-    padding-right: 7rem;
+    padding-right: 5rem;
   }
 
   .about__content {
@@ -479,7 +479,7 @@ textarea {
   }
 
   .home-hero__cta {
-    padding-right: 5rem;
+    padding-right: 2.5rem;
   }
 }
 
