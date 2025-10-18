@@ -760,6 +760,7 @@ strong{
   }
 
   .heading-primary {
+    width: 95svw;
     margin: 0;
     line-height: 1.4;
     margin-bottom: 1.5rem;
