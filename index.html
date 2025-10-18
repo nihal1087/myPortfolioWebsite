@@ -7,7 +7,13 @@
     <title>Dopefolio</title>
     <meta name="description" content="Portfolio Template for Developer" />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="preload"
+      href="css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +22,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="header">
       <div class="header__content">
@@ -23,7 +30,7 @@
           <div class="header__logo-img-cont">
             <img
               src="./assets/img/avatar.jpg"
-              alt="Ram Maheshwari Logo Image"
+              alt="Nihal Logo Image"
               class="header__logo-img"
             />
           </div>
@@ -31,18 +38,18 @@
         </div>
         <div class="header__main">
           <ul class="header__links">
-            <li class="header__link-wrapper">
+            <li>
               <a href="./index.html" class="header__link"> Home </a>
             </li>
-            <li class="header__link-wrapper">
+            <li>
               <a href="./index.html#projects" class="header__link">
                 Projects
               </a>
             </li>
-            <li class="header__link-wrapper">
+            <li>
               <a href="./index.html#about" class="header__link">About </a>
             </li>
-            <li class="header__link-wrapper">
+            <li>
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
@@ -82,16 +89,19 @@
         </div>
       </div>
     </header>
+
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is <span class="namespan">Nihal</span> </h1>
-          <p class="text-primary home-hero__info">
-            I am a <strong> Frontend Developer</strong> from Srinagar, India —
-            turning ideas into <strong>elegant</strong> ,<strong
-              >accessible</strong
-            >
-            , and <strong>high-performing UI/UX web experiences.</strong>
-          </p>
+        <h1 class="heading-primary">
+          Hey, My name <span class="namespans">is</span>
+          <span class="namespan">Nihal</span>
+        </h1>
+        <p class="text-primary home-hero__info">
+          I am a <strong> Frontend Developer</strong> from Srinagar, India —
+          turning ideas into <strong>elegant</strong>,
+          <strong>accessible</strong>, and
+          <strong>high-performing UI/UX web experiences.</strong>
+        </p>
         <div class="home-hero__cta">
           <a href="./#projects" class="next-section"
             >See my projects <span class="inspan"> > </span>
@@ -122,7 +132,9 @@
               />
             </div>
             <div class="projects__row-content">
-              <a href="./Pages/project-1.html" class="learnmore">Learn more ></a>
+              <a href="./Pages/project-1.html" class="learnmore"
+                >Learn more ></a
+              >
               <p class="projects__row-content-desc">
                 Quizzical is a simple quiz app that lets you select alternatives
                 and then gives you a score. It's built with functional React
@@ -142,7 +154,9 @@
               />
             </div>
             <div class="projects__row-content">
-              <a href="./Pages/project-2.html" class="learnmore">Learn more ></a>
+              <a href="./Pages/project-2.html" class="learnmore"
+                >Learn more ></a
+              >
               <p class="projects__row-content-desc">
                 A Chrome Extension that gives you an overview over the current
                 time, how the weather is like and how Dogecoin is performing.
@@ -162,7 +176,9 @@
               />
             </div>
             <div class="projects__row-content">
-              <a href="./Pages/project-3.html" class="learnmore">Learn more ></a>
+              <a href="./Pages/project-3.html" class="learnmore"
+                >Learn more ></a
+              >
               <p class="projects__row-content-desc">
                 An app that generates random passwords based on a few user
                 inputs, e.g. length, types of characters, etc. Built with HTML,
@@ -180,10 +196,10 @@
           <span class="heading-sec__main">About Me</span>
           <span class="heading-sec__sub">
             <p>
-              Frontend Developer exploring the  <em>how</em>  behind seamless digital
-              experiences. I blend UI/UX thinking with modern web technologies
-              like React and Tailwind CSS to create interfaces that not only
-              work fast but also feel right.
+              Frontend Developer exploring the <em>how</em> behind seamless
+              digital experiences. I blend UI/UX thinking with modern web
+              technologies like React and Tailwind CSS to create interfaces that
+              not only work fast but also feel right.
             </p>
           </span>
         </h2>
@@ -209,37 +225,61 @@
       <div class="foot">
         <h2>Contact</h2>
         <div class="main-footer__social-cont">
-          <a target="_blank" rel="noreferrer" href="mailto:nihalonly772@gmail.com" class="social-icon">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:nihalonly772@gmail.com"
+            class="social-icon"
+          >
             <img
               class="main-footer__icon main-footer__icon--mr-none"
               src="./assets/img/envelope_481658.png"
               alt="icon"
+              loading="lazy"
             />
           </a>
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/feed/" class="social-icon">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/feed/"
+            class="social-icon"
+          >
             <img
               class="main-footer__icon"
               src="./assets/img/linkedin-ico.png"
               alt="icon"
+              loading="lazy"
             />
           </a>
-          <a target="_blank" rel="noreferrer" href="https://github.com/nihal1434" class="social-icon">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/nihal1434"
+            class="social-icon"
+          >
             <img
               class="main-footer__icon"
               src="./assets/img/github-ico.png"
               alt="icon"
+              loading="lazy"
             />
           </a>
-          <a target="_blank" rel="noreferrer" href="https://x.com/NameisKurosaki" class="social-icon">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://x.com/NameisKurosaki"
+            class="social-icon"
+          >
             <img
               class="main-footer__icon"
               src="./assets/img/twitter-ico.png"
               alt="icon"
+              loading="lazy"
             />
           </a>
         </div>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
   </body>
 </html>
