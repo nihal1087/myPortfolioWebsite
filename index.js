@@ -1,50 +1,29 @@
-// ---
-const hamMenuBtn = document.querySelector(".header__main-ham-menu-cont");
-const smallMenu = document.querySelector(".header__sm-menu");
-const headerHamMenuBtn = document.querySelector(".header__main-ham-menu");
-const headerHamMenuCloseBtn = document.querySelector(".header__main-ham-menu-close");
-const headerSmallMenuLinks = document.querySelectorAll(".header__sm-menu-link");
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const nav = document.getElementById("nav");
+const hamMenu = document.getElementById("ham-menu");
 
-const menuBtn = document.getElementById("menu-btn")
-const closeBtn = document.getElementById("close-btn")
-const nav = document.getElementById("nav")
-const hamMenu = document.getElementById("ham-menu")
-menuBtn.addEventListener("click",()=>{
-  nav.classList.add("open-nav")
-  hamMenu.classList.add("menu-btn")
-})
-closeBtn.addEventListener("click",()=>{
-  nav.classList.remove("open-nav")
-  hamMenu.classList.remove("menu-btn")
-
-})
-
-hamMenuBtn.addEventListener("click", () => {
-  if (smallMenu.classList.contains("header__sm-menu--active")) {
-    smallMenu.classList.remove("header__sm-menu--active");
-  } else {
-    smallMenu.classList.add("header__sm-menu--active");
-  }
-  if (headerHamMenuBtn.classList.contains("d-none")) {
-    headerHamMenuBtn.classList.remove("d-none");
-    headerHamMenuCloseBtn.classList.add("d-none");
-  } else {
-    headerHamMenuBtn.classList.add("d-none");
-    headerHamMenuCloseBtn.classList.remove("d-none");
-  }
+menuBtn.addEventListener("click", () => {
+  nav.classList.add("open-nav");
+  hamMenu.classList.add("menu-btn");
 });
 
-for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-  headerSmallMenuLinks[i].addEventListener("click", () => {
-    smallMenu.classList.remove("header__sm-menu--active");
-    headerHamMenuBtn.classList.remove("d-none");
-    headerHamMenuCloseBtn.classList.add("d-none");
+closeBtn.addEventListener("click", () => {
+  nav.classList.remove("open-nav");
+  hamMenu.classList.remove("menu-btn");
+});
+
+// Close hamburger menu when a nav link is clicked
+const navLinks = document.querySelectorAll(".header__link");
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open-nav");
+    hamMenu.classList.remove("menu-btn");
   });
-}
+});
 
-// ---
-const headerLogoConatiner = document.querySelector(".header__logo-container");
-
-headerLogoConatiner.addEventListener("click", () => {
+// Logo click → go to home
+const headerLogoContainer = document.querySelector(".header__logo-container");
+headerLogoContainer.addEventListener("click", () => {
   location.href = "../index.html";
 });

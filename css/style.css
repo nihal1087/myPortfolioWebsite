@@ -15,6 +15,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 WHY DOES NESTING CSS CLASSES WORK HERE??????
 
 */
+
 *,
 *::after,
 *::before {
@@ -26,7 +27,7 @@ WHY DOES NESTING CSS CLASSES WORK HERE??????
 
 html {
   background: #e6eef7;
-  background: linear-gradient(132deg, #e6eef7 0%, #ebf2ff 100%);
+  background: linear-gradient(132deg, #dee9f7 0%, #e1ebfc 100%);
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -49,7 +50,6 @@ li {
   list-style: none;
 }
 
-input:focus,
 a:focus {
   outline: none;
 }
@@ -60,9 +60,7 @@ a:focus {
   z-index: 1;
   background: #ffffff;
   box-shadow: 0 5px 25px #cedff0;
-}
-
-.header__content {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,6 +78,10 @@ a:focus {
 
 .header__logo-container:hover {
   color: #1E90FF;
+}
+
+.hm {
+  display: none;
 }
 
 .header__logo-img-cont {
@@ -103,55 +105,7 @@ a:focus {
   font-size: 2.1rem;
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: .5px;
-}
-
-.header__main-ham-menu-cont {
-  display: none;
-}
-
-.header__sm-menu {
-  background: #fff;
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .3s;
-  box-shadow: 0px 5px 5px 0px #cedff0;
-  -webkit-box-shadow: 0px 5px 5px 0px #cedff0;
-  -moz-box-shadow: 0px 5px 5px 0px #cedff0;
-}
-
-.header__sm-menu--active {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.header__sm-menu-link a {
-  display: block;
-  text-decoration: none;
-  padding: 2.5rem 3rem;
-  font-size: 1.7rem;
-  color: #333;
-  text-align: center;
-  border-bottom: 2px solid #e6eef7;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: color .3s;
-}
-
-.header__sm-menu-link a:hover {
-  color: #1E90FF;
-}
-
-.header__sm-menu-link:first-child a {
-  border-top: 1px solid #eee;
-}
-
-.header__sm-menu-link-last {
-  border-bottom: 0;
+  letter-spacing: 1px;
 }
 
 .header__links {
@@ -174,7 +128,6 @@ a:focus {
 }
 
 .heading-primary {
-  margin-left: -12rem;
   padding-top: 8rem;
   font-weight: 600;
   font-size: 6rem;
@@ -183,6 +136,39 @@ a:focus {
   text-align: left;
   line-height: 1.4;
   margin-bottom: 2rem;
+}
+
+.home-hero {
+  background: #cedff0;
+  background: linear-gradient(132deg, #cee1f4 0%, #dee9f7 100%);
+  color: #242323;
+  height: 100svh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inspan {
+  top: -65%;
+  right: -16%;
+  position: absolute;
+  font-weight: 300;
+  font-size: 6rem;
+}
+
+.home-hero__info {
+  color: #242323;
+  font-size: 2.5rem;
+  max-width: 70rem;
+  padding-right: 7rem;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.home-hero__cta {
+  text-align: end;
+  padding-top: 10rem;
 }
 
 .heading-sec__mb-bg {
@@ -263,27 +249,6 @@ a:focus {
   color: #000000;
   position: relative;
   display: inline-block;
-
-}
-
-.home-hero__content {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100svh;
-  text-align: start;
-  width: 90%;
-}
-
-.inspan {
-  top: -65%;
-  right: -16%;
-  position: absolute;
-  font-weight: 300;
-  font-size: 6rem;
 }
 
 .learnmore {
@@ -360,41 +325,8 @@ a:focus {
   display: none;
 }
 
-.exit {
-  display: none;
-}
-
-.home-hero {
-  background: #cedff0;
-  background: linear-gradient(132deg, #cedff0 0%, #e7f0fd 100%);
-  background-position: center;
-  color: #242323;
-  height: 100vh;
-  min-height: 80rem;
-  max-height: 120rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 strong {
   font-weight: 600;
-}
-
-.home-hero__info {
-  color: #242323;
-  font-size: 2.5rem;
-  max-width: 70rem;
-  padding-right: 7rem;
-  letter-spacing: 1px;
-  line-height: 1.6;
-}
-
-.home-hero__cta {
-  padding-top: 12rem;
-  align-self: flex-end;
-  padding-right: 31.5rem;
 }
 
 .about__content {
@@ -415,7 +347,6 @@ strong {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
-
 
 .about__content-details-para {
   font-size: 1.8rem;
@@ -487,7 +418,6 @@ strong {
   text-align: start;
 }
 
-
 .contact {
   display: flex;
   justify-content: center;
@@ -497,14 +427,12 @@ strong {
   background-position: center;
 }
 
-
 .project-cs-hero {
   background: #cedff0;
   background: linear-gradient(132deg, #cedff0 0%, #e7f0fd 100%);
   background-position: center;
   position: relative;
 }
-
 
 .project-cs-hero__content {
   padding: 25rem 0 17rem 0;
@@ -583,7 +511,7 @@ strong {
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-  background: rgba(153, 153, 153, 0.2);
+  background: #99999933;
   border-radius: 5px;
   font-weight: 600;
   color: #777;
@@ -621,7 +549,6 @@ strong {
 .project-details__links-btn:last-child {
   margin: 0;
 }
-
 
 .main-footer__short-desc {
   margin-top: 2rem;
@@ -695,7 +622,7 @@ strong {
 }
 
 .skills__skill:hover {
-  background-color: #7ebaf5;
+  background-color: #76b5f5;
 }
 
 .social-icon:hover,
@@ -710,23 +637,29 @@ strong {
   padding-top: 0;
 }
 
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 59%;
+  }
+}
+
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 56%;
   }
 
-  .header__main-ham-menu-cont {
-    /* width: 3rem; */
-    /* padding: 2.2rem 0; */
+  .hm {
+    display: none;
   }
 
-
-  .header__main-ham-menu {
-    width: 100%;
-  }
-
-  .header__main-ham-menu-close {
-    width: 100%;
+  .exit {
+    display: none;
   }
 
   .projects__row {
@@ -737,7 +670,6 @@ strong {
 
   .home-hero__cta {
     padding-top: 7rem;
-    padding-right: 5rem;
   }
 
   .learnmore {
@@ -762,7 +694,7 @@ strong {
     text-align: left;
   }
 
-  .header__content {
+  .header {
     padding: 0 2rem;
   }
 
@@ -816,12 +748,13 @@ strong {
     width: 3rem;
     height: 3rem;
   }
- .open{
+
+  .open {
     width: 3em;
   }
+
   .contact {
     padding: 1em;
-
     justify-content: space-between;
   }
 
@@ -834,24 +767,16 @@ strong {
     grid-gap: 8rem;
   }
 
-  .home-hero__content {
-    align-items: unset;
-  }
-}
-
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 59%;
-  }
-}
-
-@media only screen and (min-width: 112.5em) {
-  html {
-    font-size: 65%;
+  .home-hero {
+    width: 100svw;
+    height: 100svh;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
+  .hm {
+    display: unset;
+  }
 
   .header__logo-sub {
     font-size: 2rem;
@@ -867,11 +792,6 @@ strong {
 
   .heading-primary {
     font-size: 4.5rem;
-  }
-
-  .home-hero {
-    height: unset;
-    min-height: unset;
   }
 
   .project-cs-hero {
@@ -890,12 +810,18 @@ strong {
     font-size: 2.4rem;
   }
 
+  .home-hero {
+    width: 100vw;
+    height: 100svh;
+    padding: 0rem;
+  }
+
+  .heading-primary {
+    width: 90%;
+  }
+
   .home-hero__content {
-    padding: 14rem 1rem 10rem;
-    width: 98%;
-    margin: auto;
-    position: relative;
-    transform: translate(0, 0);
+    width: 92%;
   }
 
   .home-hero__info {
@@ -914,7 +840,7 @@ strong {
   }
 
   .home-hero__cta {
-    padding-right: 2.75rem;
+    padding-right: 3rem;
   }
 
   .project-cs-hero__content {
@@ -936,19 +862,6 @@ strong {
     justify-content: flex-start;
   }
 
-  .header__sm-menu--active {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .header__main-ham-menu-cont {
-    display: block;
-  }
-
-  .header__content {
-    overflow: hidden;
-  }
-
   nav {
     position: fixed;
     top: 0;
@@ -958,8 +871,7 @@ strong {
     flex-direction: column;
     display: none;
     margin-top: .5rem;
-    border-bottom: 2px solid #e6eef7 ;
-    /* background-color: #ffffff; */
+    border-bottom: 2px solid #e6eef7;
   }
 
   .exit {
@@ -995,8 +907,6 @@ strong {
 
   .header__links {
     flex-direction: column;
-
-    /* display: none; */
   }
 
   .project-details__links-btn:last-child {
@@ -1048,9 +958,11 @@ strong {
     top: 27px;
   }
 }
-.open-nav{
+
+.open-nav {
   display: flex;
 }
-.menu-btn{
+
+.menu-btn {
   display: none;
 }
