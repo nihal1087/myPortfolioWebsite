@@ -821,7 +821,7 @@ strong {
   }
 
   .home-hero__content {
-    margin-top: 2rem;
+    margin-top: 4rem;
     width: 92%;
   }
 
@@ -842,6 +842,7 @@ strong {
 
   .home-hero__cta {
     padding-right: 3rem;
+    padding-top: 8rem;
   }
 
   .project-cs-hero__content {
