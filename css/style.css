@@ -373,7 +373,7 @@ strong {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 2.5rem;
-  box-shadow: 1px 2px 6px #cedff0;
+  box-shadow: 1px 2px 6px #c2d7ec;
   padding: 2em;
   margin-bottom: 7rem;
   border-radius: 1em;
