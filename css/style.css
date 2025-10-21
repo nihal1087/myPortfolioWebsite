@@ -162,6 +162,9 @@ a:focus {
   z-index: -1;
 
 }
+ .home-hero__content{
+    margin-left: -20rem;
+  }
 
 .inspan {
   top: -65%;
@@ -756,6 +759,9 @@ strong {
     justify-content: space-between;
     align-items: center;
   }
+  .home-hero__content{
+    margin-left: 0;
+  }
 
   .foot h2 {
     font-size: 2.5rem;
@@ -843,6 +849,7 @@ strong {
   .home-hero__content {
     margin-top: 4rem;
     width: 92%;
+    
   }
 
   .home-hero__info {
