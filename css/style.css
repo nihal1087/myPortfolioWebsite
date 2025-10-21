@@ -155,13 +155,15 @@ a:focus {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(132deg, rgba(206, 225, 244, 0.7), rgba(222, 233, 247, 0.7)),
+    linear-gradient(132deg, #c9def1, #d7e4f6b3),
     url("/assets/img/bg2.jpg") no-repeat center center/cover;
-  opacity: 0.45;
+  opacity: 0.55;
   /* works separately */
   z-index: -1;
 
 }
+/*   background: linear-gradient(132deg, #cedff0 0%, #e7f0fd 100%);
+ */
  .home-hero__content{
     margin-left: -20rem;
   }
