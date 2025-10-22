@@ -27,7 +27,7 @@ WHY DOES NESTING CSS CLASSES WORK HERE??????
 
 html {
   background: #e6eef7;
-  background: linear-gradient(132deg, #dee9f7 0%, #e1ebfc 100%);
+  background: linear-gradient(132deg, #dfe8f2 0%, #dde5f3 100%);
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
