@@ -115,7 +115,7 @@ a:focus {
 .header__link {
   padding: 2.2rem 3rem;
   display: inline-block;
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   color: #242323;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -201,7 +201,6 @@ a:focus {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: left;
-  margin-bottom: .25rem;
   position: relative;
   text-align: center;
 }
@@ -216,7 +215,6 @@ a:focus {
   font-weight: 400;
   max-width: 80rem;
   margin: auto;
-  margin-bottom: 8rem;
   line-height: 1.6;
 }
 
@@ -711,18 +709,15 @@ strong {
 
   .header__link {
     padding: 3rem 1.8rem;
-    font-size: 1.65rem;
   }
 
   .heading-primary {
     margin: 0;
     line-height: 1.4;
     margin-bottom: 1.5rem;
-
   }
 
   .heading-sec__mb-med {
-    margin-bottom: 3rem;
     text-align: start;
   }
   .heading-sec__main {
@@ -788,8 +783,6 @@ strong {
     justify-content: space-between;
   }
 
-  
-
   .about__content {
     grid-template-columns: 1fr;
     grid-gap: 8rem;
@@ -815,7 +808,7 @@ strong {
   }
 
   .namespan {
-    font-size: 5.25rem;
+    font-size: 5.5rem;
   }
 
   .heading-primary {
@@ -827,15 +820,8 @@ strong {
     min-height: unset;
   }
 
-  .project-cs-hero__content {
-    padding: 19rem 0 13rem 0;
-    margin: auto;
-    position: static;
-    transform: translate(0, 0);
-  }
-
   .project-details__content-title {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 
   .home-hero {
@@ -851,7 +837,6 @@ strong {
   .home-hero__content {
     margin-top: 4rem;
     width: 92%;
-    
   }
 
   .home-hero__info {
@@ -894,9 +879,6 @@ strong {
   .foot {
     gap: 1rem;
   }
-
-  
-
   nav {
     position: fixed;
     top: 0;
@@ -923,7 +905,6 @@ strong {
     display: block;
     text-decoration: none;
     padding: 2.5rem 3rem;
-    font-size: 1.85rem;
     color: #333;
     text-align: center;
     background-color: #ffffff;
@@ -935,9 +916,8 @@ strong {
   }
 
   .header__link:hover {
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #1E90FF;
-    /* font-weight: 600; */
     background-color: #c2d9f2;
   }
 
