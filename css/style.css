@@ -869,7 +869,7 @@ strong {
     display: none;
   }
   .skills {
-      width: 100vw;
+      width: unset;
   }
   .home-hero__cta {
     padding-right: 3rem;
@@ -923,7 +923,7 @@ strong {
     display: block;
     text-decoration: none;
     padding: 2.5rem 3rem;
-    font-size: 1.7rem;
+    font-size: 1.85rem;
     color: #333;
     text-align: center;
     background-color: #ffffff;
@@ -935,8 +935,9 @@ strong {
   }
 
   .header__link:hover {
+    font-size: 2rem;
     color: #1E90FF;
-    font-weight: 600;
+    /* font-weight: 600; */
     background-color: #c2d9f2;
   }
 
