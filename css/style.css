@@ -85,9 +85,9 @@ a:focus {
 }
 
 .header__logo-img-cont {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50px;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
   overflow: hidden;
   margin-right: 1.5rem;
   background: #7ebaf5;
@@ -590,8 +590,8 @@ strong {
   }
 
   .header__logo-img-cont {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5.25rem;
+    height: 5.25rem;
     margin-right: 1.2rem;
   }
 
