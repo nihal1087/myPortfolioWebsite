@@ -256,8 +256,7 @@ a:focus {
   letter-spacing: 1px;
   font-size: 2.15rem;
   font-weight: 400;
-  max-width: 80rem;
-  margin: auto;
+  max-width: 85rem;
 }
 
 .project-details__desc-para {
@@ -265,6 +264,9 @@ a:focus {
   margin-bottom: 2rem;
   font-size: 2.05;
   text-align: left;
+}
+.project-details__desc-para li {
+  font-size: 2rem;
 }
 
 .project_sub {
