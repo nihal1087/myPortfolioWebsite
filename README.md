@@ -78,7 +78,7 @@ Feel free to reach out!
 
 - **Email:** nihalonly772@gmail.com  
 - **LinkedIn:** https://www.linkedin.com/feed/  
-- **GitHub:** https://github.com/nihal1434  
+- **GitHub:** https://github.com/nihal1087  
 - **Twitter:** https://x.com/NameisKurosaki  
 
 ---
