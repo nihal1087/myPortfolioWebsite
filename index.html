@@ -1,206 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Portfolio</title>
-  <meta name="description" content="Portfolio Template for Developer" />
-
-  <link rel="stylesheet" href="css/style.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,300;0,400;1,300&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__logo-container">
-      <div class="header__logo-img-cont">
-        <img src="./assets/img/avatar.jpg" alt="Nihal Logo Image" class="header__logo-img" />
-      </div>
-      <p class="header__logo-sub">Nihal</p>
-    </div>
-    <div id="ham-menu">
-      <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="open hm" id="menu-btn" />
-    </div>
-    <nav class="header__main" id="nav">
-      <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="exit hm hm2" id="close-btn" />
-      <ul class="header__links">
-        <li>
-          <a href="./index.html" class="header__link"> Home </a>
-        </li>
-        <li>
-          <a href="./index.html#projects" class="header__link"> Projects </a>
-        </li>
-        <li>
-          <a href="./index.html#about" class="header__link">About </a>
-        </li>
-        <li>
-          <a href="./index.html#contact" class="header__link"> Contact </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="home-hero">
-    <div class="home-hero__content">
-      <h1 class="heading-primary">
-        <span class="namespan">Hey,</span> My name is Nihal
-      </h1>
-      <p class="home-hero__info">
-        I am a <strong> Frontend Developer</strong> from Srinagar, India —
-        turning ideas into <strong>elegant</strong>,
-        <strong>accessible</strong>, and
-        <strong>high-performing UI/UX web experiences.</strong>
-      </p>
-      <div class="home-hero__cta">
-        <a href="./#projects" class="next-section">See my projects <span class="inspan"> > </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="main-container">
-      <h2 class="heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Projects</span>
-        <span class="heading-sec__sub">
-          All my projects include links to the code and live version.
-          Click the button to learn more about each one.
-        </span>
-      </h2>
-
-      <div class="projects__content">
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <h3 class="projects__row-content-title">Ghosty</h3>
-            <img src="./assets/img/ghosty.webp" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <a href="./Pages/project-1.html" class="learnmore">Learn more ></a>
-            <p class="projects__row-content-desc">
-              A full-stack Node.js application for sharing ghostly encounters with real-time updates using
-              Server-Sent Events and a vanilla HTTP backend.
-            </p>
-          </div>
-        </div>
-
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <h3 class="projects__row-content-title">Personal Dashboard</h3>
-            <img src="./assets/img/dashboard.webp" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <a href="./Pages/project-2.html" class="learnmore">Learn more ></a>
-            <p class="projects__row-content-desc">
-              A productivity-focused Chrome new-tab extension displaying real-time updates, GitHub repositories, and
-              interactive LeetCode progress using modern JavaScript.
-            </p>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <h3 class="projects__row-content-title">Password Generator</h3>
-
-            <img src="./assets/img/password.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <a href="./Pages/project-3.html" class="learnmore">Learn more ></a>
-            <p class="projects__row-content-desc">
-              An app that generates random passwords based on a few user
-              inputs, e.g. length, types of characters, etc. Built with HTML,
-              CSS, and vanilla JavaScript.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main">About Me</span>
-        <span class="heading-sec__sub">
-          <p>
-            Frontend Developer exploring the <em>how</em> behind seamless
-            digital experiences. I blend UI/UX thinking with modern web
-            technologies like React and Tailwind CSS to create interfaces that
-            not only work fast but also feel right.
-          </p>
-        </span>
-      </h2>
-      <div class="about__content">
-        <div class="about__content-skills">
-          <h3 class="about__content-title">My Skills</h3>
-          <div class="skills">
-
-  <!-- Core Web -->
-  <div class="skills__skill">HTML5</div>
-  <div class="skills__skill">CSS3</div>
-    <div class="skills__skill">TypeScript</div>
-
-  <div class="skills__skill">JavaScript (ES6+)</div>
-
-  <!-- Frontend -->
-  <div class="skills__skill">React</div>
-  <div class="skills__skill">Tailwind CSS</div>
-  <div class="skills__skill">Responsive Design</div>
-
-  <!-- Backend -->
-  <div class="skills__skill">Node.js</div>
-  <div class="skills__skill">REST APIs</div>
-  <div class="skills__skill">Server-Sent Events (SSE)</div>
-  <div class="skills__skill">Event-Driven Architecture</div>
-  <div class="skills__skill">Input Validation & Sanitization</div>
-
-  <!-- Databases -->
-  <div class="skills__skill">SQL</div>
-  <div class="skills__skill">Relational Databases</div>
-  <!-- Deployment -->
-  <div class="skills__skill">Render</div>
-    <div class="skills__skill">Figma</div>
-
-  <div class="skills__skill">Production Deployment</div>
-  <!-- Tools -->
-  <div class="skills__skill">Git & GitHub</div>
-  <div class="skills__skill">VS Code</div>
-
-  
-
-</div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact" class="contact">
-    <div class="foot">
-      <h2>Contact</h2>
-      <div class="main-footer__social-cont">
-        <a target="_blank" rel="noreferrer" href="mailto:nihalonly772@gmail.com" class="social-icon">
-          <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/img/envelope_481658.png" alt="icon"
-            loading="lazy" />
-        </a>
-        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/feed/" class="social-icon">
-          <img class="main-footer__icon" src="./assets/img/linkedin-ico.png" alt="icon" loading="lazy" />
-        </a>
-        <a target="_blank" rel="noreferrer" href="https://github.com/nihal1087" class="social-icon">
-          <img class="main-footer__icon" src="./assets/img/github-ico.png" alt="icon" loading="lazy" />
-        </a>
-        <a target="_blank" rel="noreferrer" href="https://x.com/NameisKurosaki" class="social-icon">
-          <img class="main-footer__icon" src="./assets/img/twitter-ico.png" alt="icon" loading="lazy" />
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script src="./index.js" defer></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohammad Nihal's full-stack developer portfolio featuring React, Node.js, data pipelines, and deployable software projects."
+    />
+    <meta name="theme-color" content="#0b0c0e" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title> Nihal | Full-Stack Developer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
