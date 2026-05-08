@@ -38,6 +38,8 @@ function ProjectVisual({ project }) {
         alt={`${project.title} interface screenshot`}
         className="project-card__image"
         loading="lazy"
+        fetchPriority="low"
+        decoding="async"
       />
     );
   }
@@ -133,7 +135,14 @@ export default function Home() {
           </div>
 
           <aside className="profile-panel" aria-label="Profile snapshot">
-            <img src={profile.avatarImage} alt="Mohammad Nihal" className="profile-panel__avatar" />
+            <img
+              src={profile.avatarImage}
+              alt="Mohammad Nihal"
+              className="profile-panel__avatar"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
             <div>
               <p className="profile-panel__name">{profile.shortName}</p>
               <p>{profile.tagline}</p>

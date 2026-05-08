@@ -31,7 +31,14 @@ export default function Header() {
       <div className="site-header__inner">
         <button className="brand" type="button" onClick={goHome} aria-label="Go to homepage">
           <span className="brand__image-wrap">
-            <img src={profile.avatarImage} alt="" className="brand__image" />
+            <img
+              src={profile.avatarImage}
+              alt=""
+              className="brand__image"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
           </span>
           <span className="brand__copy">
             <span className="brand__name">{profile.shortName}</span>
