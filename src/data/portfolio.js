@@ -1,4 +1,4 @@
-import avatarImage from "../../assets/img/avatar.jpg";
+import avatarImage from "../../assets/img/avatar.webp";
 import dashboardImage from "../../assets/img/dashboard.webp";
 import ghostyImage from "../../assets/img/ghosty.webp";
 import scholar_sync from "../../assets/img/scholar_sync.webp"
