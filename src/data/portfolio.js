@@ -1,4 +1,5 @@
-import avatarImage from "../../assets/img/avatar.webp";
+import avatarImage from "../../assets/img/avatar.avif";
+import avatarSmallImage from "../../assets/img/avatarsmall.avif";
 import dashboardImage from "../../assets/img/dashboard.webp";
 import ghostyImage from "../../assets/img/ghosty.webp";
 import scholar_sync from "../../assets/img/scholar_sync.webp"
@@ -16,6 +17,7 @@ export const profile = {
   leetcode: "https://leetcode.com/u/name_is_nihal/",
   blog: "https://nihalnyl.blog/",
   avatarImage,
+  avatarSmallImage,
 };
 
 export const heroStats = [

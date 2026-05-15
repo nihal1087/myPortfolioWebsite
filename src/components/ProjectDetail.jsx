@@ -27,7 +27,17 @@ function CaseLink({ href, children, variant = "primary" }) {
 
 function CaseVisual({ project }) {
   if (project.image) {
-    return <img src={project.image} alt={`${project.title} project screenshot`} />;
+    return (
+      <img
+        src={project.image}
+        alt={`${project.title} project screenshot`}
+        width="1280"
+        height="720"
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+      />
+    );
   }
 
   const visual = getProjectVisual(project);

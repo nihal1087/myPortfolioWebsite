@@ -37,6 +37,8 @@ function ProjectVisual({ project }) {
         src={project.image}
         alt={`${project.title} interface screenshot`}
         className="project-card__image"
+        width="1280"
+        height="720"
         loading="lazy"
         fetchPriority="low"
         decoding="async"

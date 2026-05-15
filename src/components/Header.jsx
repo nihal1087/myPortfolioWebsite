@@ -32,9 +32,11 @@ export default function Header() {
         <button className="brand" type="button" onClick={goHome} aria-label="Go to homepage">
           <span className="brand__image-wrap">
             <img
-              src={profile.avatarImage}
+              src={profile.avatarSmallImage}
               alt=""
               className="brand__image"
+              width="96"
+              height="96"
               loading="eager"
               fetchPriority="high"
               decoding="async"
