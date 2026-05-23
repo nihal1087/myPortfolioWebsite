@@ -14,7 +14,7 @@ export const profile = {
   phone: "+91 8789600276",
   github: "https://github.com/nihal1087",
   linkedin: "https://www.linkedin.com/in/mohammad-nihal-519523289/",
-  leetcode: "https://leetcode.com/u/name_is_nihal/",
+  leetcode: "https://leetcode.com/u/nihal1087/",
   blog: "https://nihalnyl.blog/",
   avatarImage,
   avatarSmallImage,
