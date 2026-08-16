@@ -23,21 +23,22 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="footer__actions" aria-label="Contact and profile links">
+        <ul className="footer__actions" aria-label="Contact and profile links">
           {contactLinks.map(({ label, href, icon: Icon }) => (
-            <a
-              className="icon-link"
-              key={label}
-              href={href}
-              target={href.startsWith("http") ? "_blank" : undefined}
-              rel={href.startsWith("http") ? "noreferrer" : undefined}
-            >
-              <Icon aria-hidden="true" />
-              <span>{label}</span>
-              <ArrowUpRight aria-hidden="true" className="icon-link__arrow" />
-            </a>
+            <li key={label}>
+              <a
+                className="icon-link"
+                href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noreferrer" : undefined}
+              >
+                <Icon aria-hidden="true" />
+                <span>{label}</span>
+                <ArrowUpRight aria-hidden="true" className="icon-link__arrow" />
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </footer>
   );

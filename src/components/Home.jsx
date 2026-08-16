@@ -22,11 +22,11 @@ import {
 
 function SectionIntro({ eyebrow, title, children }) {
   return (
-    <div className="section-intro">
+    <header className="section-intro">
       <p className="eyebrow">{eyebrow}</p>
       <h2>{title}</h2>
       {children ? <p>{children}</p> : null}
-    </div>
+    </header>
   );
 }
 
@@ -47,7 +47,7 @@ function ProjectVisual({ project }) {
   }
 
   return (
-    <div className="project-visual" aria-label={`${project.title} project summary`}>
+    <div className="project-visual">
       <div className="project-visual__topline">
         <span>{project.visual.eyebrow}</span>
         <span>{project.visual.metric}</span>
@@ -77,13 +77,13 @@ function ProjectCard({ project }) {
         <h3>{project.title}</h3>
         <p>{project.summary}</p>
 
-        <div className="tag-row" aria-label={`${project.title} technologies`}>
+        <ul className="tag-row" aria-label={`${project.title} technologies`}>
           {project.stack.slice(0, 6).map((item) => (
-            <span className="tag" key={item}>
+            <li className="tag" key={item}>
               {item}
-            </span>
+            </li>
           ))}
-        </div>
+        </ul>
 
         <div className="project-card__actions">
           <Link className="text-link" to={`/projects/${project.slug}`}>
@@ -139,7 +139,7 @@ export default function Home() {
           <aside className="profile-panel" aria-label="Profile snapshot">
             <img
               src={profile.avatarImage}
-              alt="Mohammad Nihal"
+              alt="Portrait of Mohammad Nihal"
               className="profile-panel__avatar"
               loading="eager"
               fetchPriority="high"
@@ -247,13 +247,13 @@ export default function Home() {
               {skillGroups.map((group) => (
                 <article className="skill-card" key={group.title}>
                   <h3>{group.title}</h3>
-                  <div className="tag-row">
+                  <ul className="tag-row">
                     {group.items.map((skill) => (
-                      <span className="tag" key={skill}>
+                      <li className="tag" key={skill}>
                         {skill}
-                      </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </article>
               ))}
             </div>

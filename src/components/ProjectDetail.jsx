@@ -43,7 +43,7 @@ function CaseVisual({ project }) {
   const visual = getProjectVisual(project);
 
   return (
-    <div className="case-visual" aria-label={`${project.title} visual summary`}>
+    <div className="case-visual">
       <p>{visual.eyebrow}</p>
       <h2>{visual.title}</h2>
       <div>
@@ -74,7 +74,7 @@ function CaseMetrics({ metrics = [] }) {
 
 function CaseSectionHeading({ eyebrow, title, icon: Icon }) {
   return (
-    <div className="case-section__heading">
+    <header className="case-section__heading">
       <span className="case-section__icon" aria-hidden="true">
         <Icon />
       </span>
@@ -82,7 +82,7 @@ function CaseSectionHeading({ eyebrow, title, icon: Icon }) {
         <p className="eyebrow">{eyebrow}</p>
         <h2>{title}</h2>
       </div>
-    </div>
+    </header>
   );
 }
 
@@ -154,13 +154,13 @@ export default function ProjectDetail() {
             </div>
             <div className="case-meta__block">
               <h2>Stack</h2>
-              <div className="tag-row">
+              <ul className="tag-row">
                 {project.stack.map((item) => (
-                  <span className="tag" key={item}>
+                  <li className="tag" key={item}>
                     {item}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </aside>
 
@@ -175,14 +175,14 @@ export default function ProjectDetail() {
 
             <section className="case-section">
               <CaseSectionHeading eyebrow="Approach" title="How the system comes together" icon={Layers} />
-              <div className="case-step-list">
+              <ol className="case-step-list">
                 {approach.map((step, index) => (
-                  <article className="case-step" key={step}>
+                  <li className="case-step" key={step}>
                     <span>{String(index + 1).padStart(2, "0")}</span>
                     <p>{step}</p>
-                  </article>
+                  </li>
                 ))}
-              </div>
+              </ol>
             </section>
 
             <section className="case-section case-section--split">
@@ -206,13 +206,13 @@ export default function ProjectDetail() {
               </article>
             </section>
 
-            <div className="next-project">
+            <nav className="next-project" aria-label="Next case study">
               <span>Next case study</span>
               <Link to={`/projects/${nextProject.slug}`}>
                 {nextProject.title}
                 <ArrowRight aria-hidden="true" />
               </Link>
-            </div>
+            </nav>
           </div>
         </div>
       </section>
